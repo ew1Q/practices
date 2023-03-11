@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkBox.setText("Text was changed");
                 textViewSt.setText("My number on the list №12");
             }
         };
@@ -40,4 +41,5 @@ public class MainActivity extends AppCompatActivity {
     public void onButClick(View view) {
         Toast.makeText(this, "Это сделал не я!", Toast.LENGTH_SHORT).show();
     }
+
 }
